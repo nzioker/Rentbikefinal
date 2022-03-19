@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block main %}
+<div class="container mt-auto">
+    <h1>Renting Form</h1>
+    {{ wtf.quick_form(form, button_map={"submit":"dark"}, novalidate=True ) }}
+
+    {{ cost }}
+</div>
+
+{% endblock %}
